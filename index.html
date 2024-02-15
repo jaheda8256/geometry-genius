@@ -79,7 +79,14 @@
                     <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rhombus</h2>
-                      <p>Area (A) = 0.5 x d x d  </p>
+                      <p>Area (A) = 0.5 x d x d </p>
+                      <div class="flex gap-5">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="peri" id="pentagon-perimeter">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="apo" id="pentagon-apothem">
+                      </div>
+                      <div>
+                        <p>Area: <span id="pentagon-area">0</span></p>
+                      </div>
                       <div class="card-actions">
                         <button class="btn btn-primary w-full">Calculate</button>
                       </div>
@@ -91,8 +98,15 @@
                     <div class="card-body">
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area (A) = 0.5 x p x b</p>
+                      <div class="flex gap-5">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="peri" id="pentagon-perimeter">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="apo" id="pentagon-apothem">
+                      </div>
+                      <div>
+                        <p>Area: <span id="pentagon-area">0</span></p>
+                      </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -101,9 +115,16 @@
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Ellipse</h2>
-                      <p>Area (A) = πab</p>
+                      <p>Area (A) = π ab</p>
+                      <div class="flex gap-5">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="major" id="ellipse-major-radius">
+                        <input class="w-20 text-xl p-2 rounded-sm" type="text" placeholder="minor" id="ellipse-minor-radius">
+                      </div>
+                      <div>
+                        <p>Area: <span id="ellipse-area">0</span></p>
+                      </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -118,5 +139,8 @@
     <script src="scripts/triangle.calculate.js"></script>
     <script src="scripts/rectangle.area.js"></script>
     <script src="scripts/parallelogram.area.js"></script>
+    <script src="scripts/pentagon.area.js"></script>
+    <script src="scripts/ellipse.area.js"></script>
+    
 </body>
 </html>
